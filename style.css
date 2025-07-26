@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+section, header {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: rgb(0,0,139);
+    color: white;
+}
+
+header .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rem 0;
+}
+
+.presentation {
+    text-align: center;
+}
+
+.presentation h1 {
+    font-size: 6rem;
+}
+
+.navbar {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.navbar-nav {
+    width: 100%;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav-link {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 4rem;
+}
+
+.social-links i {
+    font-size: 3rem;
+    color: white;
+}
+
+.scroll-mouse-animation {
+    position: relative;
+    height: 60px;
+    width: 100%;
+}
+
+.scroll-downs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 34px;
+    height: 55px;
+}
+
+.mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+}
+
+.scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}
+
+.about {
+    background-color: yellow;
+}
+
+.skills {
+    background-color: green;
+}
+
+.projects {
+    background-color: red;
+}
+
+.contact {
+    background-color: pink;
+}
